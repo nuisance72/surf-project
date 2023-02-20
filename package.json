@@ -1,0 +1,29 @@
+{
+    "name": "gulp_start",
+    "version": "1.0.0",
+    "description": "my first project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Olesia Shkut",
+    "license": "ISC",
+    "devDependencies": {
+        "animate.css": "^4.1.1",
+        "browser-sync": "^2.27.11",
+        "del": "6.1.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^5.1.0",
+        "imagemin": "^8.0.1",
+        "jquery": "^3.6.3",
+        "sass": "^1.58.1",
+        "slick-slider": "^1.8.2"
+    },
+    "dependencies": {
+        "gulp-uglify-es": "^3.0.0",
+        "save-dev": "^0.0.1-security"
+    }
+}
