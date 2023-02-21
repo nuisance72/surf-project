@@ -13,3 +13,10 @@ $(".header__slider").slick({
         return `<button type="button"><span class='slider-dots__number'>0${i + 1}</span><span>${title}</span></button>`;
     },
 })
+
+$('.serf-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: '<img class="slider-arrows slider-arrows-left" src="./image/header_arrow.svg" alt="стрелка">',
+    prevArrow: '<img class="slider-arrows slider-arrows-right" src="./image/header_arrow_pprew.svg" alt="стрелка">',
+});
