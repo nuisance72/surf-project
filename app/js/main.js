@@ -1,9 +1,13 @@
+// const prevArrow = '<button><img class="slider-arrows slider-arrows-right" src="./image/header_arrow_pprew.svg" alt="стрелка"></button>';
+// const nextArrow = '<button><img class="slider-arrows slider-arrows-left" src="./image/header_arrow.svg" alt="стрелка"></button>';
+const prevArrow = '<img class="slider-arrows slider-arrows-right" src="./image/header_arrow_pprew.svg" alt="стрелка">';
+const nextArrow = '<img class="slider-arrows slider-arrows-left" src="./image/header_arrow.svg" alt="стрелка">';
+
 $(".header__slider").slick({
     infinite: true,
     fade: true,
-    nextArrow: '<img class="slider-arrows slider-arrows-left" src="./image/header_arrow.svg" alt="стрелка">',
-    prevArrow: '<img class="slider-arrows slider-arrows-right" src="./image/header_arrow_pprew.svg" alt="стрелка">',
-
+    nextArrow,
+    prevArrow,
     //дотсы в хедере
     dots: true,
     appendDots: '.slider-dots',
@@ -14,9 +18,19 @@ $(".header__slider").slick({
     },
 })
 
-$('.serf-slider').slick({
+$('.surf-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: '<img class="slider-arrows slider-arrows-left" src="./image/header_arrow.svg" alt="стрелка">',
-    prevArrow: '<img class="slider-arrows slider-arrows-right" src="./image/header_arrow_pprew.svg" alt="стрелка">',
+    nextArrow,
+    prevArrow,
+    asNavFor: '.slider-map',
+});
+
+
+$('.slider-map').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.surf-slider',
+    focusOnSelect: true,
 });
