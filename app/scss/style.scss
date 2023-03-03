@@ -431,6 +431,8 @@
             border-right: 12px solid transparent;
             bottom: -5px;
             left: 60%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
         .slider-block__content-row {
             display: flex;
@@ -441,6 +443,10 @@
     .slider-block__content--one {
         bottom: 35px;
         transform: translateX(0);
+        &::before {
+            left: 0;
+            bottom: -20px;
+        }
     }
 }
 
